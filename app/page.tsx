@@ -16,13 +16,9 @@ const shapeUtils = [ResponseShapeUtil]
 export default function App() {
 	return (
 		<div className="editor">
-			<Tldraw
-				persistenceKey="make-real"
-				shareZone={<MakeRealButton />}
-				shapeUtils={shapeUtils}
-			>
+			<Tldraw persistenceKey="make-real" shareZone={<MakeRealButton />} shapeUtils={shapeUtils}>
 				<TldrawLogo />
-				{/* <RiskyButCoolAPIKeyInput /> */}
+				<RiskyButCoolAPIKeyInput />
 			</Tldraw>
 		</div>
 	)
